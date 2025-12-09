@@ -1,5 +1,8 @@
 import json
 import os
+import time
+import random
+import re
 import google.generativeai as genai
 from dotenv import load_dotenv
 from src.models import AgentState, ProductData, UserQuestion, CompetitorProduct, PageOutput, PageSection
@@ -22,23 +25,38 @@ class BaseAgent:
             generation_config["response_mime_type"] = "application/json"
 
         model = genai.GenerativeModel(
-            model_name="gemini_1.5_flash",
+            model_name="gemini-2.5-flash-lite",
             system_instruction=system_prompt,
             generation_config=generation_config
         )
 
-        try:
-            response = model.generate_content(user_content)
-            return response.text
-        except Exception as e:
-            print(f"Error calling Gemini: {e}")
-            return "{}" if expect_json else "Error generating content"
+        max_retries = 5
+        base_delay = 20
+
+        for attempt in range(max_retries):
+            try:
+                response = model.generate_content(user_content)
+                return response.text
+            except Exception as e:
+                error_msg = str(e)
+                if "429" in error_msg or "quota" in error_msg.lower():
+                    wait_time = (base_delay * (2 ** attempt)) + random.uniform(1, 5)
+                    print(f"Quota hit. Waiting {int(wait_time)}s before retry {attempt+1}/{max_retries}")
+                    time.sleep(wait_time)
+                else:
+                    print(f"Error calling Gemini: {e}")
+                    return "{}" if expect_json else "Error generating content."
+
+        raise Exception("Max retries exceeded for Gemini API.")
         
 
 
 class AnalystAgent(BaseAgent):
     def run(self, raw_data: dict) -> AgentState:
         print(f"[{self.name}] Ingesting and Enriching Data")
+
+        raw_price = str(raw_data['Price'])
+        clean_price = float(re.sub(r'[^\d.]', '', raw_price)) if raw_data["Price"] else 0.0
 
         product = ProductData(
             name=raw_data['Product Name'],
@@ -48,7 +66,7 @@ class AnalystAgent(BaseAgent):
             benefits=[x.strip() for x in raw_data['Benefits'].split(",")],
             how_to_use=raw_data['How to Use'],
             side_effects=raw_data['Side Effects'],
-            price=raw_data['Price']
+            price=clean_price
         )
 
         print(f"[{self.name}] Generating Questions")
@@ -78,11 +96,14 @@ class AnalystAgent(BaseAgent):
         print(f"[{self.name}] Creating Fictional Competitor")
         
         c_prompt = f"""
-            Create a fictional competitor product (Product B) competing with {product.name}.
-            The competitor should be realistic but different.
-        
-            Output Structure (JSON):
-            {{ "name": "...", "key_ingredients": ["..."], "benefits": ["..."], "price": "..." }}
+            Create a fictional competitor product (Product B) vs {product.name}.
+            Output JSON: {{ 
+                "name": "...", 
+                "key_ingredients": ["..."], 
+                "benefits": ["..."], 
+                "price": 500.00 (in INR)
+            }} 
+            IMPORTANT: 'price' must be a number (float), not a string.
         """
 
         c_response = self.call_llm(
@@ -95,7 +116,7 @@ class AnalystAgent(BaseAgent):
             competitor = CompetitorProduct(**json.loads(c_response))
         except Exception as e:
              print(f"JSON Parsing Error (Competitor): {e}")
-             competitor = CompetitorProduct(name="Unknown", key_ingredients=[], benefits=[], price="0")
+             competitor = CompetitorProduct(name="Unknown", key_ingredients=[], benefits=[], price=0.0)
 
         
         return AgentState(
@@ -130,7 +151,7 @@ class PublisherAgent(BaseAgent):
                 relevant_ques = [q for q in state.generated_questions if q.category == category]
 
                 qa_list = []
-                for q in relevant_ques[:5]:
+                for q in relevant_ques:
                     ans_prompt = f"Answer this concisely for {state.primary_product.name}: {q.question_text}"
 
                     ans = self.call_llm(

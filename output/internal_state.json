@@ -1,0 +1,113 @@
+{
+  "primary_product": {
+    "name": "GlowBoost Vitamin C Serum",
+    "concentration": "10% Vitamin C",
+    "skin_type": [
+      "Oily",
+      "Combination"
+    ],
+    "ingredients": [
+      "Vitamin C",
+      "Hyaluronic Acid"
+    ],
+    "benefits": [
+      "Brightening",
+      "Fades dark spots"
+    ],
+    "how_to_use": "Apply 2–3 drops in the morning before sunscreen",
+    "side_effects": "Mild tingling for sensitive skin",
+    "price": 699.0
+  },
+  "competitor_product": {
+    "name": "Radiance Elixir Niacinamide Serum",
+    "key_ingredients": [
+      "Niacinamide",
+      "Hyaluronic Acid",
+      "Green Tea Extract"
+    ],
+    "benefits": [
+      "Reduces redness",
+      "Minimizes pores",
+      "Improves skin texture",
+      "Hydrates"
+    ],
+    "price": 45.99
+  },
+  "generated_questions": [
+    {
+      "category": "Informational",
+      "question_text": "What are the key benefits of using GlowBoost Vitamin C Serum?",
+      "answer_text": null
+    },
+    {
+      "category": "Informational",
+      "question_text": "What concentration of Vitamin C is in GlowBoost Serum?",
+      "answer_text": null
+    },
+    {
+      "category": "Informational",
+      "question_text": "Does GlowBoost Serum contain any other active ingredients besides Vitamin C?",
+      "answer_text": null
+    },
+    {
+      "category": "Informational",
+      "question_text": "What is the shelf life of GlowBoost Vitamin C Serum?",
+      "answer_text": null
+    },
+    {
+      "category": "Informational",
+      "question_text": "Is GlowBoost Vitamin C Serum suitable for all skin types?",
+      "answer_text": null
+    },
+    {
+      "category": "Safety",
+      "question_text": "Are there any known side effects of using GlowBoost Vitamin C Serum?",
+      "answer_text": null
+    },
+    {
+      "category": "Safety",
+      "question_text": "Is GlowBoost Vitamin C Serum tested on animals?",
+      "answer_text": null
+    },
+    {
+      "category": "Safety",
+      "question_text": "Is GlowBoost Vitamin C Serum suitable for sensitive skin?",
+      "answer_text": null
+    },
+    {
+      "category": "Usage",
+      "question_text": "How often should I apply GlowBoost Vitamin C Serum?",
+      "answer_text": null
+    },
+    {
+      "category": "Usage",
+      "question_text": "When is the best time of day to apply GlowBoost Vitamin C Serum?",
+      "answer_text": null
+    },
+    {
+      "category": "Usage",
+      "question_text": "Can GlowBoost Vitamin C Serum be used with other skincare products?",
+      "answer_text": null
+    },
+    {
+      "category": "Usage",
+      "question_text": "How should GlowBoost Vitamin C Serum be stored?",
+      "answer_text": null
+    },
+    {
+      "category": "Purchase",
+      "question_text": "Where can I purchase GlowBoost Vitamin C Serum?",
+      "answer_text": null
+    },
+    {
+      "category": "Purchase",
+      "question_text": "Does GlowBoost Vitamin C Serum come with a satisfaction guarantee?",
+      "answer_text": null
+    },
+    {
+      "category": "Comparison",
+      "question_text": "How does GlowBoost Vitamin C Serum compare to other Vitamin C serums on the market?",
+      "answer_text": null
+    }
+  ]
+}

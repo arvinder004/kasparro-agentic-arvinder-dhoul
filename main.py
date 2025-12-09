@@ -10,7 +10,7 @@ RAW_DATA = {
     "Benefits": "Brightening, Fades dark spots",
     "How to Use": "Apply 2–3 drops in the morning before sunscreen",
     "Side Effects": "Mild tingling for sensitive skin",
-    "Price": 699
+    "Price": "₹699"
 }
 
 def ensure_output_dir():

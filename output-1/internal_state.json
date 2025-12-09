@@ -1,0 +1,104 @@
+{
+  "primary_product": {
+    "name": "GlowBoost Vitamin C Serum",
+    "concentration": "10% Vitamin C",
+    "skin_type": [
+      "Oily",
+      "Combination"
+    ],
+    "ingredients": [
+      "Vitamin C",
+      "Hyaluronic Acid"
+    ],
+    "benefits": [
+      "Brightening",
+      "Fades dark spots"
+    ],
+    "how_to_use": "Apply 2–3 drops in the morning before sunscreen",
+    "side_effects": "Mild tingling for sensitive skin",
+    "price": 699.0
+  },
+  "competitor_product": {
+    "name": "Unknown",
+    "key_ingredients": [],
+    "benefits": [],
+    "price": 0.0
+  },
+  "generated_questions": [
+    {
+      "category": "Informational",
+      "question_text": "What are the main benefits of using GlowBoost Vitamin C Serum for my skin?",
+      "answer_text": null
+    },
+    {
+      "category": "Informational",
+      "question_text": "What is the concentration of Vitamin C in GlowBoost Serum, and what form of Vitamin C is used?",
+      "answer_text": null
+    },
+    {
+      "category": "Informational",
+      "question_text": "Are there any other key active ingredients in GlowBoost Vitamin C Serum besides Vitamin C?",
+      "answer_text": null
+    },
+    {
+      "category": "Informational",
+      "question_text": "What is the shelf life of GlowBoost Vitamin C Serum once opened?",
+      "answer_text": null
+    },
+    {
+      "category": "Safety",
+      "question_text": "Is GlowBoost Vitamin C Serum suitable for all skin types, including sensitive or acne-prone skin?",
+      "answer_text": null
+    },
+    {
+      "category": "Safety",
+      "question_text": "What are the potential side effects or precautions I should be aware of when using this serum?",
+      "answer_text": null
+    },
+    {
+      "category": "Safety",
+      "question_text": "Does GlowBoost Vitamin C Serum contain any common allergens or irritants like parabens or sulfates?",
+      "answer_text": null
+    },
+    {
+      "category": "Usage",
+      "question_text": "What is the recommended frequency and method of application for GlowBoost Vitamin C Serum?",
+      "answer_text": null
+    },
+    {
+      "category": "Usage",
+      "question_text": "When in my skincare routine should I apply GlowBoost Vitamin C Serum (e.g., morning or night, before or after moisturizer)?",
+      "answer_text": null
+    },
+    {
+      "category": "Usage",
+      "question_text": "Can GlowBoost Vitamin C Serum be used alongside other active skincare ingredients like retinoids or AHAs?",
+      "answer_text": null
+    },
+    {
+      "category": "Usage",
+      "question_text": "How long does a bottle of GlowBoost Vitamin C Serum typically last with regular use?",
+      "answer_text": null
+    },
+    {
+      "category": "Purchase",
+      "question_text": "Where can I purchase GlowBoost Vitamin C Serum, and what are the available sizes and price points?",
+      "answer_text": null
+    },
+    {
+      "category": "Purchase",
+      "question_text": "Does GlowBoost Vitamin C Serum come with a money-back guarantee or have a return policy?",
+      "answer_text": null
+    },
+    {
+      "category": "Comparison",
+      "question_text": "How does GlowBoost Vitamin C Serum differentiate itself from other popular Vitamin C serums on the market?",
+      "answer_text": null
+    },
+    {
+      "category": "Comparison",
+      "question_text": "Is GlowBoost Vitamin C Serum a better choice than a Vitamin C cream for overall skin brightening and anti-aging benefits?",
+      "answer_text": null
+    }
+  ]
+}

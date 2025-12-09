@@ -11,13 +11,14 @@ class ContentLogicBlocks:
     @staticmethod
     def compare_prices(p1: ProductData, p2: CompetitorProduct) -> str:
         try:
-            p1_price = p1.price
-            p2_price = p2.price
-            diff = p1_price - p2_price
+            diff = p1.price - p2.price
 
             if diff < 0:
-                return f"{p1.name} is cheaper by {abs(diff)} units"
-            return f"{p2.name} is cheaper by {abs(diff)} units"
+                return f"{p1.name} is cheaper by ₹{abs(diff):.2f}."
+            elif diff > 0:
+                return f"{p2.name} is cheaper by ₹{abs(diff):.2f}."
+            else:
+                return "Both products have the exact same price."
         except:
             return "Price comparison unavailable"
         

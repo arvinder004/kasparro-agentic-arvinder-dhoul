@@ -1,0 +1,115 @@
+{
+  "primary_product": {
+    "name": "GlowBoost Vitamin C Serum",
+    "concentration": "10% Vitamin C",
+    "skin_type": [
+      "Oily",
+      "Combination"
+    ],
+    "ingredients": [
+      "Vitamin C",
+      "Hyaluronic Acid"
+    ],
+    "benefits": [
+      "Brightening",
+      "Fades dark spots"
+    ],
+    "how_to_use": "Apply 2–3 drops in the morning before sunscreen",
+    "side_effects": "Mild tingling for sensitive skin",
+    "price": "₹699"
+  },
+  "competitor_product": {
+    "name": "AquaRepair Hyaluronic Complex",
+    "key_ingredients": [
+      "Multi-Molecular Hyaluronic Acid",
+      "Niacinamide (Vitamin B3)",
+      "Ceramide NP",
+      "Squalane"
+    ],
+    "benefits": [
+      "Provides deep, multi-layer hydration",
+      "Strengthens the skin's natural moisture barrier",
+      "Reduces the appearance of fine lines and texture",
+      "Soothes redness and irritation",
+      "Improves overall skin resilience and plumpness"
+    ],
+    "price": "₹48.00"
+  },
+  "generated_questions": [
+    {
+      "category": "Informational",
+      "question_text": "What are the primary benefits of using GlowBoost Vitamin C Serum?",
+      "answer_text": null
+    },
+    {
+      "category": "Informational",
+      "question_text": "What is the concentration of Vitamin C in GlowBoost serum, and what form of Vitamin C is used?",
+      "answer_text": null
+    },
+    {
+      "category": "Informational",
+      "question_text": "Are there any other key active ingredients in GlowBoost Vitamin C Serum besides Vitamin C, and what do they do?",
+      "answer_text": null
+    },
+    {
+      "category": "Safety",
+      "question_text": "Is GlowBoost Vitamin C Serum suitable for all skin types, including sensitive or acne-prone skin?",
+      "answer_text": null
+    },
+    {
+      "category": "Safety",
+      "question_text": "Are there any known potential side effects or allergic reactions associated with GlowBoost Vitamin C Serum?",
+      "answer_text": null
+    },
+    {
+      "category": "Safety",
+      "question_text": "Can GlowBoost Vitamin C Serum be used safely during pregnancy or while breastfeeding?",
+      "answer_text": null
+    },
+    {
+      "category": "Usage",
+      "question_text": "What is the recommended frequency and time of day for applying GlowBoost Vitamin C Serum?",
+      "answer_text": null
+    },
+    {
+      "category": "Usage",
+      "question_text": "How should GlowBoost Vitamin C Serum be incorporated into an existing skincare routine (e.g., before or after moisturizer)?",
+      "answer_text": null
+    },
+    {
+      "category": "Usage",
+      "question_text": "What is the shelf life of GlowBoost Vitamin C Serum once opened, and how should it be stored to maintain efficacy?",
+      "answer_text": null
+    },
+    {
+      "category": "Purchase",
+      "question_text": "Where can I purchase GlowBoost Vitamin C Serum, and is it available internationally?",
+      "answer_text": null
+    },
+    {
+      "category": "Purchase",
+      "question_text": "What is the typical price range for GlowBoost Vitamin C Serum, and are there different sizes available?",
+      "answer_text": null
+    },
+    {
+      "category": "Purchase",
+      "question_text": "Does GlowBoost Vitamin C Serum come with a satisfaction guarantee or a return policy?",
+      "answer_text": null
+    },
+    {
+      "category": "Comparison",
+      "question_text": "How does GlowBoost Vitamin C Serum compare to other popular Vitamin C serums in terms of ingredient quality and effectiveness?",
+      "answer_text": null
+    },
+    {
+      "category": "Comparison",
+      "question_text": "What unique features or benefits make GlowBoost Vitamin C Serum stand out from its competitors?",
+      "answer_text": null
+    },
+    {
+      "category": "Comparison",
+      "question_text": "Is GlowBoost Vitamin C Serum a better option for hyperpigmentation than a Vitamin C cream or oil?",
+      "answer_text": null
+    }
+  ]
+}

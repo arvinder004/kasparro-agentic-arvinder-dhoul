@@ -1,0 +1,51 @@
+{
+  "page_type": "FAQ Page",
+  "meta_title": "GlowBoost Vitamin C Serum - FAQ Page",
+  "meta_description": "Automated FAQ Page for GlowBoost Vitamin C Serum",
+  "sections": [
+    {
+      "heading": "Header",
+      "content": "<h1>Unleash Your Radiance with GlowBoost Vitamin C Serum</h1>\n<p>Discover the secret to a brighter, more even complexion with our revolutionary <strong>GlowBoost Vitamin C Serum</strong>. Formulated with a potent 10% Vitamin C, this serum is your daily dose of luminosity, expertly crafted to transform oily and combination skin types. Say goodbye to dullness and hello to a visibly brighter, more vibrant you.</p>\n\n<p>Tired of stubborn dark spots and a lacklustre complexion? GlowBoost Vitamin C Serum is engineered to target these concerns head-on, delivering visible results that speak for themselves.</p>\n\n<p>At its heart is a powerful <strong>10% Vitamin C concentration</strong>, a renowned antioxidant that actively works to brighten your skin and visibly fade dark spots, revealing a more uniform tone. But we didn't stop there. We've also infused our serum with <strong>Hyaluronic Acid</strong>, ensuring that while you're fading imperfections, your skin remains hydrated and balanced – a perfect match for oily and combination skin types that often struggle with both.</p>\n\n<p>Incorporating GlowBoost into your routine is effortless. Simply apply <strong>2-3 drops in the morning</strong> to clean skin, gently patting until absorbed, and always follow with your favorite sunscreen for optimal protection and results.</p>\n\n<p>For those with sensitive skin, a <strong>mild tingling sensation</strong> may occur upon initial application. This is typically temporary and indicates the active ingredients are at work, bringing you closer to your radiant glow.</p>\n\n<p>Invest in your skin's future with GlowBoost Vitamin C Serum. At ₹699, it's a premium investment in superior brightening, targeted dark spot reduction, and a radiant, healthy-looking complexion you'll love.</p>"
+    },
+    {
+      "heading": "Safety_Questions",
+      "content": [
+        {
+          "category": "Safety",
+          "question_text": "Is GlowBoost Vitamin C Serum suitable for all skin types, including sensitive or acne-prone skin?",
+          "answer_text": "GlowBoost Vitamin C Serum is generally suitable for most skin types. For sensitive or acne-prone skin, we recommend performing a patch test first to ensure compatibility."
+        },
+        {
+          "category": "Safety",
+          "question_text": "Are there any known potential side effects or allergic reactions associated with GlowBoost Vitamin C Serum?",
+          "answer_text": "Mild tingling or redness may occur, particularly with initial use. Allergic reactions are rare but possible. A patch test is always recommended."
+        },
+        {
+          "category": "Safety",
+          "question_text": "Can GlowBoost Vitamin C Serum be used safely during pregnancy or while breastfeeding?",
+          "answer_text": "Please consult with your doctor before using GlowBoost Vitamin C Serum if you are pregnant or breastfeeding."
+        }
+      ]
+    },
+    {
+      "heading": "Usage_Questions",
+      "content": [
+        {
+          "category": "Usage",
+          "question_text": "What is the recommended frequency and time of day for applying GlowBoost Vitamin C Serum?",
+          "answer_text": "Once daily, in the morning."
+        },
+        {
+          "category": "Usage",
+          "question_text": "How should GlowBoost Vitamin C Serum be incorporated into an existing skincare routine (e.g., before or after moisturizer)?",
+          "answer_text": "Apply GlowBoost Vitamin C Serum after cleansing and toning, but before your moisturizer and sunscreen."
+        },
+        {
+          "category": "Usage",
+          "question_text": "What is the shelf life of GlowBoost Vitamin C Serum once opened, and how should it be stored to maintain efficacy?",
+          "answer_text": "Once opened, GlowBoost Vitamin C Serum has a shelf life of **6-12 months**. Store it in a **cool, dark place**, away from direct sunlight and heat, with the **cap tightly closed** to maintain efficacy."
+        }
+      ]
+    }
+  ]
+}
