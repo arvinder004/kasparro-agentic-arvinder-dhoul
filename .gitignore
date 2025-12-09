@@ -208,3 +208,13 @@ marimo/_lsp/
 __marimo__/
 
 check_models.py
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+
+/docs/REQUIREMENTS_COMPLIANCE.md
